@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Sztylet';
+    src: url('/Fonts/Sztylet-FontZillion/Fonts/sztyletbd.otf')format('otf');
+}
+
+.background-degrade {
+    padding: 10px;
+    background-image: url(/public/body_bg.svg);
+
+    /* font-family: 'Sztylet'; */
+}
+
+.font-header-title {
+    padding-top: 20px;
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'Sztylet';
+}
+
+.font-header-sub-title {
+    font-size: 15px;
+    color: #f0f0c0;
+    padding: 2px;
+    font-family: 'Sztylet';
+}
+

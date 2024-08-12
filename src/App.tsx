@@ -1,17 +1,27 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import HeaderComponent from './components/HeaderComponent/HeaderComponent'
+import BodyComponent from './components/BodyComponent/BodyComponent'
+import { GetScp } from './models/getScp.interface';
+import axios from 'axios';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [scp, setScp] = useState<GetScp | null>(null);
+  async function searchScp(inputScp: string) {
+    //TODO adicionar requisição feita pelo axios
+    const url = `https://apiscp.azurewebsites.net/api/Scp/${inputScp}`;
+    const scp: GetScp = (await axios.get(url)).data;
+    setScp(scp);
+  }
   return (
     <>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent onSearch={searchScp}></HeaderComponent>
+      <BodyComponent scpData={scp}></BodyComponent>
     </>
   )
 }
+
+
 
 export default App

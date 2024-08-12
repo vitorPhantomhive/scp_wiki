@@ -1,0 +1,17 @@
+﻿Sztylet Font Log;
+
+Forked from Hussar versions 2.00, and 2.17 on June 14, 2015.
+
+Summary of Changes:
+
+New Name; Sztylet (Dagger), New Character Designs made for some Characters.
+
+Detailed Design Change list:
+
+New designs; uppercase N, uppercase G, uppercase M, Greek Pamphylian Digamma (Upper and Lowercase), Greek uppercase Nu, Cyrillic uppercase I (and variants), Greek uppercase Omega. 
+
+Pre-existing designs; Hussar new uppercase B used as basis for new Greek uppercase Beta and Cyrillic Ve (upper and lowercase), Refinements to some Greek, Latin and Cyrillic characters, Updated Hussar uppercase A used for other uppercase A variants and equivalents.
+
+Other Changes: Removed unnecessary extra characters in the Private Use Area.
+
+Modifications by PlusOneFonts (PlusOneFonts@mail.com)
