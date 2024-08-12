@@ -1,4 +1,4 @@
-import { Col, Container, Row, Stack } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import './BodyComponent.css';
 import { useState } from "react";
 import { GetScp } from "../../models/getScp.interface";
@@ -15,9 +15,9 @@ function BodyComponent({ scpData }: BodyComponentProps) {
         </>
     }
 
-    const [itemNumber, setItemNumber] = useState(scpData!.itemNumber);
-    const [objectClass, setObjectClass] = useState(scpData!.objectClass);
-    const [containmentProcedures, setContainmentProcedures] = useState(scpData!.containmentProcedures);
+    const [itemNumber, ] = useState(scpData!.itemNumber);
+    const [objectClass, ] = useState(scpData!.objectClass);
+    const [containmentProcedures, ] = useState(scpData!.containmentProcedures);
     return (
         <Container fluid>
             <Row>
